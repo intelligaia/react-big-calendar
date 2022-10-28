@@ -16,7 +16,7 @@ pipeline
             steps{
                    sh '''
                    pwd
-                   #cp -rp * /home/ubuntu/int-tuthastu-fy22/
+                   #cp -rp * /home/ubuntu/react-big-calendar/build
                    '''
             }
         }
