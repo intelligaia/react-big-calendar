@@ -25,6 +25,7 @@ pipeline
             
             steps{
                    sh '''
+                   pwd
                    ls
                    pwd
                    rsync -parv * ubuntu@172.31.4.108:/home/ubuntu/react-big-calendar
