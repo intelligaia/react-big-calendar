@@ -13,10 +13,13 @@
 .rbc-toolbar button:hover,
 .rbc-toolbar button.rbc-active,
 .rbc-toolbar button.rbc-active:hover {
-  background: #e8f0fe;
-  color: #1967d2;
-  border-color: #d2e3fc;
+  background: #EFFAF7;
+    color: #13B68F;
+  border-color: #B4BAC5;
+  box-shadow: none;
 }
+
+ 
 .rbc-toolbar .rbc-toolbar-label {
   font-size: 22px;
   font-weight: 400;
@@ -26,10 +29,14 @@
   /*padding: 10px 3px;  Removed as impacting on Week panel*/
   font-weight: 500;
   text-transform: uppercase;
+  border-bottom: 1px solid #B4BAC5;
 }
 
+.rbc-header + .rbc-header {
+  border-left: 1px solid #B4BAC5;
+}
 .rbc-day-bg + .rbc-day-bg {
-  border-left: 1px solid #dadce0;
+  border-left: 1px solid #B4BAC5;
 }
 
 .rbc-current .rbc-button-link {
@@ -38,7 +45,7 @@
 
 .rbc-current .rbc-button-link:after {
   content: "";
-  background: #1a73e8;
+  background: #13B68F;
   position: absolute;
   width: 22px;
   height: 22px;
@@ -69,6 +76,9 @@
   color: #20212461;
 }
 
+.rbc-month-view{
+  border: 1px solid #B4BAC5;
+}
 .rbc-month-view .rbc-header {
   padding: 10px 3px;
 }
@@ -97,9 +107,20 @@
 .rbc-event,
 .rbc-day-slot .rbc-background-event {
   font-size: 12px;
-  background-color: rgb(121 134 203);
+  background-color: #D4F3FF;
+  color: #333;
+}
+
+.rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event {
+  border:none;
 }
 
 .rbc-show-more {
   font-size: 12px;
+  color: #13B68F;
 }
+
+.rbc-month-row + .rbc-month-row{
+  border-top: 1px solid #B4BAC5;
+}
+
