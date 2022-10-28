@@ -17,9 +17,9 @@ pipeline
                    sh '''
                    pwd
                    ls
-                   react-big-calendar/react-big-calender-1.intelligaia.com
                    pwd
                    #cp -rp * /home/ubuntu/react-big-calendar
+                   rsync -parv * ubuntu@172.31.4.108:/react-big-calendar
                    '''
             }
         }
