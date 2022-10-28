@@ -136,7 +136,10 @@
   outline: none;
   margin-top: 5px
 }
-
+.rbc-event:hover{
+  background-color: #68D2FD;
+  color: #FFF;
+}
 .rbc-day-slot .rbc-event,
 .rbc-day-slot .rbc-background-event {
   border: none;
