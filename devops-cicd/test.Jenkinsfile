@@ -19,7 +19,7 @@ pipeline
                    ls
                    pwd
                    #cp -rp * /home/ubuntu/react-big-calendar
-                   rsync -parv * ubuntu@172.31.4.108:/react-big-calendar
+                   rsync -parv * ubuntu@172.31.4.108:/home/ubuntu/react-big-calendar
                    '''
             }
         }
