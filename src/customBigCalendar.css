@@ -8,6 +8,8 @@
   -webkit-transition: all 0.1s 0.1s;
   transition: all 0.2s 0.1s;
   line-height: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .rbc-toolbar button:active,
@@ -24,13 +26,12 @@
 
 .rbc-toolbar .rbc-toolbar-label {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .rbc-header {
   /*padding: 10px 3px;  Removed as impacting on Week panel*/
   font-weight: 500;
-  text-transform: uppercase;
   border-bottom: 1px solid #b4bac5;
 }
 
@@ -49,12 +50,13 @@
   content: "";
   background: #13b68f;
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  left: -32%;
+  left: -22%;
   z-index: -1;
-  top: -4px;
+  top: -3px;
+  text-align: center;
 }
 
 .rbc-date-cell {
@@ -67,7 +69,14 @@
 
 .rbc-button-link {
   position: relative;
-  /* top: 5px; */
+  margin-top: 7px;
+  font-weight: 400;
+}
+.rbc-button-link.rbc-show-more {
+  font-size: 12px;
+  color: #13b68f;
+  padding: 0px 0 0 4px;
+  margin-top: 4px;
 }
 
 .rbc-off-range-bg {
@@ -96,8 +105,7 @@
   .rbc-button-link
   span {
   font-weight: 600;
-  text-transform: uppercase;
-}
+ }
 .rbc-time-view .rbc-time-header .rbc-time-header-content > .rbc-row {
   min-height: 40px;
 }
@@ -109,10 +117,13 @@
 }
 
 .rbc-event,
-.rbc-day-slot .rbc-background-event {
+.rbc-day-slot .rbc-background-event, 
+.rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
   font-size: 12px;
   background-color: #d4f3ff;
   color: #333;
+  outline: none;
+  margin-top: 5px
 }
 
 .rbc-day-slot .rbc-event,
@@ -125,10 +136,7 @@
   flex: 1 0 0;
 }
 
-.rbc-show-more {
-  font-size: 12px;
-  color: #13b68f;
-}
+
 
 .rbc-btn-group:first-child > button:not(:first-child):not(:last-child) {
   background: url(assets/arrow_back_ios.svg) no-repeat 4px center;
