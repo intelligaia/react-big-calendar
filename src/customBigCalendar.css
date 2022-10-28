@@ -12,7 +12,9 @@
 .rbc-toolbar button:active,
 .rbc-toolbar button:hover,
 .rbc-toolbar button.rbc-active,
-.rbc-toolbar button.rbc-active:hover {
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button.rbc-active:focus,
+.rbc-toolbar button:focus {
   background: #EFFAF7;
     color: #13B68F;
   border-color: #B4BAC5;
@@ -69,11 +71,11 @@
 }
 
 .rbc-off-range-bg {
-  background: #ffffff;
+  background: #E9ECF2;
 }
 
 .rbc-off-range {
-  color: #20212461;
+  color:#B4BAC5;
 }
 
 .rbc-month-view{
