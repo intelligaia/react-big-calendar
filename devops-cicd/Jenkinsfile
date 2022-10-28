@@ -15,8 +15,7 @@ pipeline
             
             steps{
                    sh '''
-                   cd /home/ubuntu/workspace/react-big-calendar/react-big-calender.intelligaia.com
-                   cp -rp * /home/ubuntu/react-big-calendar
+                   cp -rp /root/workspace/react-big-calendar/react-big-calender.intelligaia.com/*  /home/ubuntu/react-big-calendar
                    cd /home/ubuntu/react-big-calendar
                    npm run build
                    '''
