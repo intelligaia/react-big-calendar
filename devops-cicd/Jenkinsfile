@@ -5,32 +5,30 @@ pipeline
 {
     agent
     {
-        label 'worker-1'
+        label 'dev.tuthastu'
     }
 
     stages
     {
+        stage('copy-code')
+        {
+            
+            steps{
+                   sh '''
+                   pwd
+                   cd /home/ubuntu/workspace/react-big-calendar/react-big-calender.intelligaia.com
+                   ls
+                   cp -rp * /home/ubuntu/react-big-calendar
+                   '''
+            }
+        }
         stage('build-code')
         {
             
             steps{
                    sh '''
-                   cp -rp /root/workspace/react-big-calendar/react-big-calender.intelligaia.com/*  /home/ubuntu/react-big-calendar
                    cd /home/ubuntu/react-big-calendar
-                   npm install
                    npm run build
-                   '''
-            }
-        }
-        stage('copy-build')
-        {
-            
-            steps{
-                   sh '''
-                   pwd
-                   ls
-                   pwd
-                   rsync -parv * ubuntu@172.31.4.108:/home/ubuntu/react-big-calendar
                    '''
             }
         }
