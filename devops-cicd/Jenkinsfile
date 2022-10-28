@@ -17,6 +17,7 @@ pipeline
                    sh '''
                    pwd
                    cd /home/ubuntu/workspace/react-big-calendar/react-big-calender.intelligaia.com
+                   ls
                    cp -rp * /home/ubuntu/react-big-calendar
                    '''
             }
