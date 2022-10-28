@@ -16,7 +16,9 @@ pipeline
             steps{
                    sh '''
                    pwd
-                   #cp -rp * /home/ubuntu/react-big-calendar/build
+                   cd /home/ubuntu/workspace/react-big-calendar/react-big-calender.intelligaia.com
+                   ls
+                   #cp -rp * /home/ubuntu/react-big-calendar
                    '''
             }
         }
