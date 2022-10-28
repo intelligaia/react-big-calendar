@@ -97,6 +97,9 @@
 }
 
 /* Only for RBC Time View ( Week ) */
+.rbc-time-view{
+  border-color: #B4BAC5;
+}
 .rbc-time-view .rbc-header {
   padding: 10px 3px;
 }
@@ -180,6 +183,14 @@
 }
 
 /* Agenda View */
+.rbc-agenda-view table.rbc-agenda-table
+{
+  border-color: #B4BAC5;
+}
+.rbc-agenda-view table.rbc-agenda-table tbody > tr + tr
+{
+  border-color: #B4BAC5;
+}
 .rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
   padding: 5px 10px;
   vertical-align: top;
@@ -196,4 +207,22 @@
 }
 .rbc-agenda-view table.rbc-agenda-table .rbc-agenda-time-cell{
   padding-left: 5px;
+}
+
+.rbc-time-header.rbc-overflowing{
+  border-color: #B4BAC5;
+}
+
+.rbc-time-header-content {
+  border-color: #B4BAC5;
+}
+.rbc-time-content {
+  border-color: #B4BAC5;
+}
+.rbc-time-content > * + * > * {
+  border-color: #B4BAC5;
+}
+
+.rbc-timeslot-group{
+  border-color: #B4BAC5;
 }
