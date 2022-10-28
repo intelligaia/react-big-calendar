@@ -17,6 +17,8 @@ pipeline
                    sh '''
                    pwd
                    ls
+                   react-big-calendar/react-big-calender-1.intelligaia.com
+                   pwd
                    #cp -rp * /home/ubuntu/react-big-calendar
                    '''
             }
