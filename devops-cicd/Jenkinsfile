@@ -32,8 +32,10 @@ pipeline
                    '''
             }
         }
-        stage('app-restart')
-        {
+        stage('app-restart'){
+            agent {
+                label "dev.tuthastu"
+            }
             
             steps{
                    sh '''
