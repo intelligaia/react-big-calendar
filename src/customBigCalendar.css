@@ -113,7 +113,10 @@
   font-size: 14px;
  }
 .rbc-time-view .rbc-time-header .rbc-time-header-content > .rbc-row {
-  min-height: 40px;
+  min-height: 38px;
+}
+.rbc-time-view .rbc-time-header .rbc-time-header-content > .rbc-row .rbc-button-link {
+  margin-top: 0;
 }
 
 .rbc-time-slot .rbc-label {
@@ -187,12 +190,15 @@
 {
   border-color: #B4BAC5;
 }
+.rbc-agenda-view table.rbc-agenda-table thead > tr > th {
+  padding: 10px 5px;
+}
 .rbc-agenda-view table.rbc-agenda-table tbody > tr + tr
 {
   border-color: #B4BAC5;
 }
 .rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
-  padding: 5px 10px;
+  padding: 10px 10px;
   vertical-align: top;
   font-size: 14px;
   color: #333;
