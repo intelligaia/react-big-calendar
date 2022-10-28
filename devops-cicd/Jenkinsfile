@@ -15,8 +15,7 @@ pipeline
             
             steps{
                    sh '''
-                   cp -rp * /home/ubuntu/react-big-calendar
-                   cd /home/ubuntu/react-big-calendar
+                   npm i
                    npm run build
                    '''
             }
