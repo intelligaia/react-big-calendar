@@ -19,7 +19,7 @@
 }
 .rbc-toolbar .rbc-toolbar-label {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .rbc-header {
@@ -102,4 +102,39 @@
 
 .rbc-show-more {
   font-size: 12px;
+}
+
+.rbc-btn-group:first-child > button:not(:first-child):not(:last-child) {
+  background: url(assets/arrow_back_ios.svg) no-repeat 4px 6px;
+  background-size: 16px 16px;
+}
+
+.rbc-btn-group:first-child > button:last-child:not(:first-child) {
+  background: url(assets/arrow_forward_ios.svg) no-repeat 46px 5px;
+  background-size: 16px 16px;
+}
+
+.rbc-btn-group {
+  display: flex;
+}
+
+.rbc-btn-group:first-child > button:not(:first-child):not(:last-child) {
+  order: 1;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 25px;
+}
+.rbc-btn-group:first-child > button:first-child:not(:last-child) {
+  order: 2;
+  border-radius: 4px;
+  border-radius: 0;
+  margin-left: -1px;
+}
+.rbc-btn-group:first-child > button:last-child:not(:first-child) {
+  order: 3;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 25px;
 }
