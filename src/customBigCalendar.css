@@ -24,6 +24,7 @@
   box-shadow: none;
 }
 
+
 .rbc-toolbar .rbc-toolbar-label {
   font-size: 22px;
   font-weight: 700;
@@ -155,7 +156,7 @@
 
 
 .rbc-btn-group:first-child > button:last-child:not(:first-child) {
-  background: url(assets/arrow_forward_ios.svg) no-repeat 46px center;
+  background: url(assets/arrow_forward_ios.svg) no-repeat 15px center;
   background-size: 12px 12px;
 }
 .rbc-btn-group:first-child > button:last-child:not(:first-child):hover,
@@ -170,7 +171,8 @@
   border-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  padding-left: 25px;
+  padding-left: 20px;
+  text-indent: -9999px;
 }
 .rbc-btn-group:first-child > button:first-child:not(:last-child) {
   order: 2;
@@ -183,7 +185,8 @@
   border-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding-right: 25px;
+  padding-right: 20px;
+  text-indent: -9999px;
 }
 
 /* Agenda View */
