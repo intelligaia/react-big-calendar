@@ -10,26 +10,24 @@ pipeline
 
     stages
     {
-        stage('copy-code')
-        {
-            
-            steps{
-                   sh '''
-                   pwd
-                   ls
-                   pwd
-                   #cp -rp * /home/ubuntu/react-big-calendar
-                   rsync -parv * ubuntu@172.31.4.108:/home/ubuntu/react-big-calendar
-                   '''
-            }
-        }
         stage('build-code')
         {
             
             steps{
                    sh '''
-                   #cd /home/ubuntu/react-big-calendar
-                   #npm run build
+                   cd /home/ubuntu/react-big-calendar
+                   npm run build
+                   '''
+            }
+        }
+        stage('copy-build')
+        {
+            
+            steps{
+                   sh '''
+                   ls
+                   pwd
+                   rsync -parv * ubuntu@172.31.4.108:/home/ubuntu/react-big-calendar
                    '''
             }
         }
@@ -38,7 +36,7 @@ pipeline
             
             steps{
                    sh '''
-                   #sudo systemctl restart nginx
+                   sudo systemctl restart nginx
                    '''
             }
         }
