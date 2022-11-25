@@ -16,8 +16,8 @@ pipeline
             steps{
                    sh '''
                    pwd
-                   #npm install
-                   #npm run build
+                   npm install
+                   npm run build
                    '''
             }
         }
@@ -26,10 +26,9 @@ pipeline
             
             steps{
                    sh '''
-                   pwd
                    ls
                    pwd
-                   #rsync -parv react-big-calender/build /home/ubuntu/react-big-calendar
+                   rsync -parv build /home/ubuntu/react-big-calendar
                    '''
             }
         }
