@@ -5,7 +5,7 @@ pipeline
 {
     agent
     {
-        label 'worker-1'
+        label 'teza.projectsjunction'
     }
 
     stages
@@ -15,8 +15,9 @@ pipeline
             
             steps{
                    sh '''
-                   npm install
-                   npm run build
+                   pwd
+                   #npm install
+                   #npm run build
                    '''
             }
         }
@@ -28,15 +29,11 @@ pipeline
                    pwd
                    ls
                    pwd
-                   rsync -parv * ubuntu@72.31.30.244:/home/ubuntu/react-big-calendar
+                   #rsync -parv react-big-calender/build /home/ubuntu/react-big-calendar
                    '''
             }
         }
-        stage('app-restart'){
-            agent {
-                label "teza.projectsjunction"
-            }
-            
+        stage('app-restart'){ 
             steps{
                    sh '''
                    sudo systemctl restart nginx
